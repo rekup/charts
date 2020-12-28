@@ -1,0 +1,24 @@
+apiVersion: v2
+appVersion: 0.9.9
+description: Paperless-ng - Paperless-ng is a fork of the original project, adding a new interface and many other changes under the hood
+name: paperless-ng
+version: 0.1.0
+keywords:
+  - paperless
+  - paperless-ng
+home: https://github.com/k8s-at-home/charts/tree/master/charts/paperless-ng
+icon: https://raw.githubusercontent.com/jonaswinkler/paperless-ng/master/src/paperless/static/paperless/img/logo-dark.png
+sources:
+  - https://github.com/jonaswinkler/paperless-ng
+maintainers:
+  - name: rekup
+dependencies:
+  - name: common
+    repository: https://k8s-at-home.com/charts/
+    version: 2.1.1
+  - name: postgresql
+    version: "10.2.0"
+    repository: "https://charts.bitnami.com/bitnami"
+  - name: redis
+    version: "12.2.4"
+    repository: "https://charts.bitnami.com/bitnami"
